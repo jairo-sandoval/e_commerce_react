@@ -36,9 +36,9 @@
 .title h1{
     font-size: 30px;
     cursor: pointer;
-    padding: 20px;
+    padding: 13px;
+    font-weight: bold;
     width: fit-content;
-    
 }
 
 .navigation{

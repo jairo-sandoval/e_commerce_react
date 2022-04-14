@@ -40,16 +40,12 @@ button{
 
 .filters{
   width: 17%;
-  height: 300px;
+  height: 450px;
   margin: 20px;
   position: fixed;
   padding: 20px;
-
 }
 
-.filter_price{
-  display: flex;
-}
 
 .title_price{
   border-bottom: 2px solid var(--border);
@@ -75,22 +71,109 @@ button{
 
 .searcher input{
   padding: 10px;
-    font-size: 16px;
-    border: 1px solid var(--border);
+  font-size: 16px;
+  border: 1px solid var(--border);
 }
+
+.inputs_price{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputs_price  div {
+  display: flex;
+  align-items: center;
+}
+
+input[type="number"]:focus{
+  outline: none;
+}
+
+input[type="number"]{
+  -moz-appearance: textfield;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  border: 1px solid var(--border);
+  border-left: none;
+  border-right: none;
+  width: 74px;
+  height: 30px;
+
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button_number{
+  color: var(--button);
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  height: 30px;
+  border: 1px solid var(--border);
+}
+
+.increment{
+  border-radius: 0 45px 45px 0;
+  padding: 0px 4px 0px 0px;
+  border-left: none;
+}
+
+.decrement{
+  border-radius: 45px 0 0 45px;
+  padding: 0px 0px 0px 9px;
+  border-right: none;
+}
+
+.button_filter{
+  margin-top: 20px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.button_filter > button{
+  padding: 10px;
+}
+
+
+.categories {
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.categories li{
+  list-style: none;
+  cursor: pointer;
+  color: rgba(51, 51, 51, 0.863);
+  padding-top: 10px;
+}
+
+.categories li:hover{
+  color: black;
+}
+
 
 /*PRODUCTS*/
 .content{
   width: -webkit-fill-available;
   padding: 30px auto;
+  margin: 0px 52px 0px 40px;
 }
 
 .container_product {
   position: relative;
   width: 95%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 40px;
   margin: 0 auto;
 }
 

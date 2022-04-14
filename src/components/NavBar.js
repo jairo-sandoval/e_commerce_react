@@ -6,7 +6,7 @@ const NavBar = () => {
             <div className="navbar_height">
                 <nav className="navbar">
                     <div className="title">
-                        <h1>e-comerce <i class="fa-solid fa-00"></i> </h1>
+                        <h1>e-comerce </h1>
                                       
                     </div>
 
