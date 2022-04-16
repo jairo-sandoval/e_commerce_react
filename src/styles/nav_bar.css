@@ -7,11 +7,12 @@
 :root{
     --border: rgb(213, 211, 211);
     --button: #F85555;
-  }
+}
 
 .navbar_height{
     height: 80px;
     width: 100%;
+    position: relative;
 }
 
 .navbar{
@@ -30,7 +31,6 @@
     align-items: center;
     flex-grow: 3;
     height: inherit;
-
 }
 
 .title h1{
@@ -52,3 +52,56 @@
     border-left: 1px solid var(--border);
 }
 
+.login {
+    position: fixed;
+    left: 52%;
+    top: 10%;
+    padding: 17px;
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(102, 102, 102, 0.3);
+    transform: scale(0);
+    transition: 0.6s;
+    transform-origin: top;
+    z-index: 800;
+}
+
+.login.open{
+    transform: scale(1);
+}
+
+.login img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: auto;
+    margin-bottom: 14px;
+}
+
+.test_data{
+    background: #D8F5FD;
+    padding: 10px;
+    color: #51516D;
+}
+
+.test_data h4{
+    padding: 5px;
+    text-align: center;
+}
+
+.test_data p{
+    padding: 3px;
+}
+
+.test_data i{
+    padding-right: 10px;
+}
+
+.login input{
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    display: block;
+    margin-top: 4px;
+    padding: 6px 8px;
+    width: 100%;
+}

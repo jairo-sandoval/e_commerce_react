@@ -2,7 +2,7 @@ export const actions = {
     setProducts : "SET_PRODUCTS",
     toggleLoader: "TOGLELOADER",
     setCategories: "SET_CATEGORIES",
-    setProductsFiltered: "SET_PRODUCTS_FILTERED"
+    setProductsFiltered: "SET_PRODUCTS_FILTERED",
 }
 
 export const setProductsFiltered = productsFiltered => ({
@@ -24,6 +24,10 @@ export const setCategories = category => ({
     payload: category,
 }) 
 
+
+//REQUEST DATA THUNK
+
+
 export const getProductsThunk = () => {
     return dispatch => {
         dispatch(toggleLoader())
@@ -36,6 +40,7 @@ export const getProductsThunk = () => {
             .finally(() => dispatch(toggleLoader()))
     }
 }
+
 
 export const getCategories = () => {
     return dispatch => {
