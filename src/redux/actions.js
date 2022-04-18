@@ -61,3 +61,19 @@ export const handlerfilterProductsThunk = (query, value) => {
             .finally(() => dispatch(toggleLoader()))
     }
 } 
+
+export const loginThunk = (data) => {
+    return dispatch => {
+        dispatch(toggleLoader())
+        return fetch(`https://ecommerce-api-react.herokuapp.com/api/v1/users/login`,{
+            method: 'POST',
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .finally(() => dispatch(toggleLoader()))
+    }
+} 
